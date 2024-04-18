@@ -8,6 +8,8 @@ with a continuous update of requirements, specifications and
 deliverables with development efforts being contained within single
 cycles.
 
-Follow the
-[documentation](https://brunoalmiron.github.io/mbd-elevator/dev/) page
-to learn about the project and the development process.
+Follow the documentation page to learn about the project and the development process.
+
+**Documentation**: https://brunoalmiron.github.io/mbd-elevator/
+
+> **_Current Iteration_**: https://brunoalmiron.github.io/mbd-elevator/dev/
