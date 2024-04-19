@@ -16,6 +16,8 @@
       
       
       
+        <link rel="next" href="artifacts/requirements/">
+      
       
       <link rel="icon" href="assets/elevator.svg">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.18">
@@ -114,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Início
             
           </span>
         </div>
@@ -235,7 +237,41 @@
   
     
   
-  Home
+  Início
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="artifacts/requirements/" class="md-tabs__link">
+        
+  
+    
+  
+  Requisitos
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="artifacts/specifications/" class="md-tabs__link">
+        
+  
+    
+  
+  Especificações
 
       </a>
     </li>
@@ -303,16 +339,95 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Início
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="." class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Home
+    Início
   </span>
   
 
       </a>
       
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ciclo-de-desenvolvimento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ciclo de Desenvolvimento
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="artifacts/requirements/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Requisitos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="artifacts/specifications/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Especificações
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -336,6 +451,23 @@
   
     
   
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ciclo-de-desenvolvimento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ciclo de Desenvolvimento
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -367,9 +499,24 @@
 
 
 <h1 id="elevator-control-design-and-validation">Elevator Control Design and Validation<a class="headerlink" href="#elevator-control-design-and-validation" title="Permanent link">&para;</a></h1>
-<p>The current project is designed to evaluate the development of of a
-control system of an elevator with a model-based design methodology,
-coordinated by agile processes and requirement engineering principles.</p>
+<p>O projeto atual é desenvolvido para avaliar o desenvolvimento de um
+sistema de controle para elevadores baseado na metodologia de
+model-based design (MBD). O projeto, em conjunto com a documentação
+presente elicitar o proceso de desenvolvimento contínuo tanto das
+definições de projeto, como das atividades técnicas desempenhadas.</p>
+<h2 id="ciclo-de-desenvolvimento">Ciclo de Desenvolvimento<a class="headerlink" href="#ciclo-de-desenvolvimento" title="Permanent link">&para;</a></h2>
+<p><img alt="Ciclo de Desenvolvimento" src="assets/img/development_cycle.png" /></p>
+<p>Apoiado nas práticas ágeis, este projeto deve:</p>
+<ul>
+<li>Elicitar <code>requisitos</code> para o projeto</li>
+<li>Desenvolver <code>casos de teste</code> para estes requisitos</li>
+<li>Elicitar <code>especificações</code> para o atingimento dos requisitos e
+    objetivos específicos do ciclo.</li>
+<li>Desenvolver <code>modelos do sistema</code> e <code>modelos do controle</code></li>
+<li>Desenvolver <code>procedimentos de teste</code> e automações para tais</li>
+<li>Validar em plataforma HIL os artefatos desenvolvidos (Software e modelos)
+    frente aos artefatos de projeto como especificações e requisitos.</li>
+</ul>
 
 
 
@@ -402,6 +549,28 @@ coordinated by agile processes and requirement engineering principles.</p>
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+        
+          
+          <a href="artifacts/requirements/" class="md-footer__link md-footer__link--next" aria-label="Next: Requisitos">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Requisitos
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
