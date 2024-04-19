@@ -9,7 +9,7 @@
 
     ---
 
-    Conforto do usuário segundo <u>__ABNT__</u>
+    Conforto do Usuário Segundo <u>__ABNT__</u>
 </div>
 
 <!-- Descrição -->
@@ -44,6 +44,7 @@
 
     ---
 
+    Inibição de Travamento por Usuário
     
 </div>
 
@@ -80,7 +81,7 @@
 
     ---
 
-    Conforto do usuário segundo <u>__ABNT__</u>
+    Exatidão de Parada Segundo <u>__ABNT__</u>
 </div>
 
 <!-- Descrição -->
@@ -117,7 +118,8 @@
 
     ---
 
-    Conforto do usuário segundo <u>__ABNT__</u>
+    Restrição de Velocidade em Operação Segundo <u>__ABNT__</u>
+
 </div>
 
 <!-- Descrição -->
