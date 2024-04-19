@@ -135,4 +135,4 @@ extra_css:
 # Page tree
 nav:
   - Home: index.md
-  - Requirements: artifacts\requirements.md
+  - Requisitos: artifacts\requirements.md
