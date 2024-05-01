@@ -1,0 +1,15 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  [data-md-color-scheme="slate"] {
+    --md-hue: 212deg;
+  }
