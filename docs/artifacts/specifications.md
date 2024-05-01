@@ -2,36 +2,40 @@
 
 ## SPEC-01
 
-<!-- Título -->
-<div class="grid cards" markdown>
+!!! specification "Aceleração Máxima"
+    !!! description "Descrição"
+        TBD
+    !!! links
+        - Especifica :octicons-arrow-right-24: [REQ-05 Conforto de Operação - Aceleração](requirements.md#req-05)
 
--   :material-format-title:{ .lg .middle } __Título__
+## SPEC-02
 
-    ---
+!!! specification "Jitter Máximo"
+    !!! description "Descrição"
+        TBD
+    !!! links
+        - Especifica :octicons-arrow-right-24: [REQ-06 Conforto de Operação - Jitter](requirements.md#req-06)
 
-    Volte em breve!
+## SPEC-03
 
-</div>
+!!! specification "Tempo Limite de Retenção da Cabine"
+    !!! description "Descrição"
+        TBD
+    !!! links
+        - Especifica :octicons-arrow-right-24: [REQ-07 Alerta Sonoro da Cabine](requirements.md#req-07)
+## SPEC-04
 
-<!-- Descrição -->
-<div class="grid cards" markdown>
+!!! specification "Limite de Exatidão de Parada"
+    !!! description "Descrição"
+        ± 10 mm
+    !!! links
+        - Especifica :octicons-arrow-right-24: [REQ-08 Exatidão de Posicionamento - Parada](requirements.md#req-08)
+        - Especifica :octicons-arrow-right-24: [REQ-09 Exatidão de Posicionamento - Carga/Descarga](requirements.md#req-09)
 
--   :material-text-short:{ .lg .middle } __Descrição__
+## SPEC-05
 
-    ---
-
-    Volte em breve!
-
-</div>
-
-<!-- Links -->
-<div class="grid cards" markdown>
-
--   :material-relation-one-to-one:{ .lg .middle } __Artefatos Relacionados__
-
-    ---
-
-    Nenhum até o momento.
-
-    [:octicons-arrow-right-24: Nenhum até o momento](#req-01)
-</div>
+!!! specification "Limite de Exatidão de Nivelamento"
+    !!! description "Descrição"
+        ± 10 mm
+    !!! links
+        - Especifica :octicons-arrow-right-24: [REQ-09 Exatidão de Posicionamento - Carga/Descarga](requirements.md#req-09)
