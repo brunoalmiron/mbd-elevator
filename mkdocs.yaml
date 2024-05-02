@@ -1,6 +1,6 @@
 # Project information
 site_name: Model-based elevator design 
-site_url: https://brunoalmiron.github.io/mbd-elevator
+site_url: 'https://brunoalmiron.github.io/mbd-elevator/'
 site_description: This project aim to design and validate the control of an elevator
 site_author: Bruno Almiron Rodrigues
 
