@@ -36,6 +36,6 @@
 
 !!! specification "Limite de Exatidão de Nivelamento"
     !!! description "Descrição"
-        ± 10 mm
+        ± 20 mm
     !!! links
         - Especifica :octicons-arrow-right-24: [REQ-09 Exatidão de Posicionamento - Carga/Descarga](requirements.md#req-09)
