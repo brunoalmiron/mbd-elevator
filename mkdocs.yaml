@@ -139,3 +139,10 @@ nav:
   - Início: index.md
   - Requisitos: artifacts/requirements.md
   - Especificações: artifacts/specifications.md
+  - Testes:
+    - Casos de Teste: artifacts/testcase.md
+    - Procedimentos de Teste: artifacts/testprocedure.md
+  - Notas:
+    - Notas da Versão: notes/release.md
+    - Notas Compiladas: notes/compiled.md
+    - Resumos Compilados: notes/summary.md
