@@ -12,6 +12,8 @@
     !!! links "Artefatos Relacionados"
         - Derivado em :octicons-arrow-right-24: [REQ-05 Conforto de Operação - Aceleração](#req-05)
         - Derivado em :octicons-arrow-right-24: [REQ-06 Conforto de Operação - Jitter](#req-06)
+        - Testado por :octicons-arrow-right-24: [Conforto de Operação - Aceleração](testcase.md#tcase-01)
+        - Testado por :octicons-arrow-right-24: [Conforto de Operação - Jitter](testcase.md#tcase-02)
 
 ## REQ-02
 
@@ -33,6 +35,8 @@
     !!! links "Artefatos Relacionados"
         - Derivado em :octicons-arrow-right-24: [REQ-08 Exatidão de Posicionamento - Parada](#req-08)
         - Derivado em :octicons-arrow-right-24: [REQ-09 Exatidão de Posicionamento - Carga/Descarga](#req-09)
+        - Testado por :octicons-arrow-right-24: [Exatidão de Posicionamento - Parada](testcase.md#tcase-04)
+        - Testado por :octicons-arrow-right-24: [Exatidão de Posicionamento - Carga/Descarga](testcase.md#tcase-05)
 
 ## REQ-04
 
@@ -59,6 +63,7 @@
     !!! links "Artefatos Relacionados"
         - Derivado de :octicons-arrow-right-24: [REQ-01 Conforto de Operação](#req-01)
         - Especificado por :octicons-arrow-right-24: [SPEC-01 Aceleração Máxima](specifications.md#spec-01)
+        - Testado por :octicons-arrow-right-24: [Conforto de Operação - Aceleração](testcase.md#tcase-01)
 
 ## REQ-06
 
@@ -68,6 +73,7 @@
     !!! links "Artefatos Relacionados"
         - Derivado de :octicons-arrow-right-24: [REQ-01 Conforto de Operação](#req-01)
         - Especificado por :octicons-arrow-right-24: [SPEC-02 Jitter Máximo](specifications.md#spec-02)
+        - Testado por :octicons-arrow-right-24: [Conforto de Operação - Jitter](testcase.md#tcase-02)
 
 ## REQ-07
 
@@ -83,11 +89,11 @@
 
 !!! requirement "Exatidão de Posicionamento - Parada"
     !!! description "Descrição"
-        Ao parar a cabine, o sistema atingir a parada dentro do 
-        [limite de exatidão de parada](specifications.md#spec-04).
+        Ao parar a cabine, o sistema atingir a parada dentro do [limite de exatidão de parada](specifications.md#spec-04).
     !!! links "Artefatos Relacionados"
         - Derivado de :octicons-arrow-right-24: [REQ-03 Exatidão de Posicionamento](#req-03)
         - Especificado por :octicons-arrow-right-24:  [SPEC-04 Limite de Exatidão de Parada](specifications.md#spec-04)
+        - Testado por :octicons-arrow-right-24: [Exatidão de Posicionamento - Parada](testcase.md#tcase-04)
 
 ## REQ-09
 
@@ -101,3 +107,4 @@
         - Derivado de :octicons-arrow-right-24: [REQ-03 Exatidão de Posicionamento](#req-03)
         - Especificado por :octicons-arrow-right-24:  [SPEC-04 Limite de Exatidão de Parada](specifications.md#spec-04)
         - Especificado por :octicons-arrow-right-24:  [SPEC-05 Limite de Exatidão de Nivelamento](specifications.md#spec-05)
+        - Testado por :octicons-arrow-right-24: [Exatidão de Posicionamento - Carga/Descarga](testcase.md#tcase-05)
