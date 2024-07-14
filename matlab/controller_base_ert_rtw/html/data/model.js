@@ -1,0 +1,1 @@
+var modelInfo = {model:"controller_base"};var modelHierarchy=[{model:"controller_base",relativePath:"_internal.html",parent:"null"},];var AddCode = true;
