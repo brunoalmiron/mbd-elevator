@@ -1,4 +1,10 @@
-## Objetivos da iteração
+# 0.1
+
+- Not developed
+
+# 0.2
+
+### Objetivos da iteração
 
 Conforme estabelecido no ciclo 0, onde foram arranjados os recursos mínimos para o início de um ciclo de desenvolvimento, foram determinados os seguintes tópicos a serem atendidos:
 
@@ -12,7 +18,7 @@ Conforme estabelecido no ciclo 0, onde foram arranjados os recursos mínimos par
 - Referenciar modelos à testes unitários de demonstração.
 - Rastrear modelos à requisitos de demonstração.
 
-## Resultados da iteração
+### Resultados da iteração
 
 Durante esta etapa de desenvolvimento, o desenvolvimento do sistema de artefatos do projeto atendeu o registro dos requisitos originais e com derivação preliminar destes. Artefatos de casos de teste e especificação também foram elicitados conforme norma ou mantidos em aberto para especificação subsequente.
 
@@ -33,7 +39,7 @@ A seguir é apresentado a contagem corrente de artefatos do projeto:
 
 ![Artefato por iteração](../assets/plots/artifact_series.svg)
 
-## Considerações para iterações subsequentes
+### Considerações para iterações subsequentes
 
 O uso de requisitos funcionais de forma independente pode reduzir a carga de trabalho na elicitação de requisitos até que o controlador e os modelos atinjam funcionalidades mais alto nível. Nesse sentido, requisitos independentes podem receber traceabilidade ao avançar do projeto, evitando a criação de requisitos, especificações e outros artefatos que não contribuam no ciclo corrente.
 
