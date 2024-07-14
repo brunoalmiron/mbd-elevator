@@ -2,154 +2,109 @@
 
 ## REQ-01
 
-<!-- Título -->
-<div class="grid cards" markdown>
-
--   :material-format-title:{ .lg .middle } __Título__
-
-    ---
-
-    Conforto do Usuário Segundo <u>__ABNT__</u>
-</div>
-
-<!-- Descrição -->
-<div class="grid cards" markdown>
-
--   :material-text-short:{ .lg .middle } __Descrição__
-
-    ---
-
-    O sistema deve apresentar operação confortável, com
-    aceleração e desaceleração suaves, sem trancos ou solvancos.
-</div>
-
-<!-- Links -->
-<div class="grid cards" markdown>
-
--   :material-relation-one-to-one:{ .lg .middle } __Artefatos Relacionados__
-
-    ---
-
-    Nenhum até o momento.
-
-    [:octicons-arrow-right-24: Nenhum até o momento](#req-01)
-</div>
+!!! requirement "Conforto de Operação"
+    !!! description "Descrição"
+        A <u>__ABNT__</u> determina que, dado um sistema de elevador:
+        ```quote
+        O sistema deve apresentar operação confortável, com
+        aceleração e desaceleração suaves, sem trancos ou solvancos.
+        ```
+    !!! links "Artefatos Relacionados"
+        - Derivado em :octicons-arrow-right-24: [REQ-05 Conforto de Operação - Aceleração](#req-05)
+        - Derivado em :octicons-arrow-right-24: [REQ-06 Conforto de Operação - Jitter](#req-06)
+        - Testado por :octicons-arrow-right-24: [Conforto de Operação - Aceleração](testcase.md#tcase-01)
+        - Testado por :octicons-arrow-right-24: [Conforto de Operação - Jitter](testcase.md#tcase-02)
 
 ## REQ-02
 
-<!-- Título -->
-<div class="grid cards" markdown>
-
--   :material-format-title:{ .lg .middle } __Título__
-
-    ---
-
-    Inibição de Travamento por Usuário
-    
-</div>
-
-<!-- Descrição -->
-<div class="grid cards" markdown>
-
--   :material-text-short:{ .lg .middle } __Descrição__
-
-    ---
-
-    O sistema deve inibir usuários de reterem as portas abertas por
-    tempo prolongado.
-
-</div>
-
-<!-- Links -->
-<div class="grid cards" markdown>
-
--   :material-relation-one-to-one:{ .lg .middle } __Artefatos Relacionados__
-
-    ---
-
-    Nenhum até o momento.
-
-    [:octicons-arrow-right-24: Nenhum até o momento](#req-02)
-</div>
+!!! requirement "Inibição de Travamento por Usuário"
+    !!! description "Descrição"
+        O sistema deve inibir usuários de reterem as portas abertas por
+        tempo prolongado.
+    !!! links "Artefatos Relacionados"
+        - Derivado em :octicons-arrow-right-24: [Alerta Sonoro da Cabine](#req-07)
 
 ## REQ-03
 
-<!-- Título -->
-<div class="grid cards" markdown>
-
--   :material-format-title:{ .lg .middle } __Título__
-
-    ---
-
-    Exatidão de Parada Segundo <u>__ABNT__</u>
-</div>
-
-<!-- Descrição -->
-<div class="grid cards" markdown>
-
--   :material-text-short:{ .lg .middle } __Descrição__
-
-    ---
-
-    5.12.1.1.4 A exatidão de parada do piso da cabina deve
-    ser de ± 10 mm. Se, por exemplo, durante o período de
-    carga e descarga, a exatidão de nivelamento for excedida
-    em ± 20 mm, ela deve ser corrigida para ± 10 mm.a
-
-</div>
-
-<!-- Links -->
-<div class="grid cards" markdown>
-
--   :material-relation-one-to-one:{ .lg .middle } __Artefatos Relacionados__
-
-    ---
-
-    [:octicons-arrow-right-24: Nenhum até o momento](#req-03)
-
-</div>
+!!! requirement "Exatidão de Posicionamento"
+    !!! description "Descrição"
+        5.12.1.1.4 A exatidão de parada do piso da cabina deve
+        ser de ± 10 mm. Se, por exemplo, durante o período de
+        carga e descarga, a exatidão de nivelamento for excedida
+        em ± 20 mm, ela deve ser corrigida para ± 10 mm.a
+    !!! links "Artefatos Relacionados"
+        - Derivado em :octicons-arrow-right-24: [REQ-08 Exatidão de Posicionamento - Parada](#req-08)
+        - Derivado em :octicons-arrow-right-24: [REQ-09 Exatidão de Posicionamento - Carga/Descarga](#req-09)
+        - Testado por :octicons-arrow-right-24: [Exatidão de Posicionamento - Parada](testcase.md#tcase-04)
+        - Testado por :octicons-arrow-right-24: [Exatidão de Posicionamento - Carga/Descarga](testcase.md#tcase-05)
 
 ## REQ-04
 
-<!-- Título -->
-<div class="grid cards" markdown>
+!!! requirement "Restrição de Velocidade em Operação Segundo <u>__ABNT__</u>"
+    !!! description "Descrição"
+        5.9.2.4 A velocidade do carro, com metade da carga
+        nominal, em subida ou descida, no meio do percurso,
+        excluindo os períodos de aceleração e retardamento, não
+        pode exceder à velocidade nominal em mais de 5%, com
+        a frequência da rede no valor nominal e a tensão do motor
+        igual ao valor nominal do equipamento.
+            a) impedir o elevador de atender chamadas de pavimento e comandos remotos;
+            b) desativar a operação das portas automáticas;
+            c) permitir chamada, pelo menos para os pavimentos
+                extremos, para manutenção.
+    !!! links "Artefatos Relacionados"
+        :octicons-arrow-right-24: [Nenhum até o momento](#req-04)
 
--   :material-format-title:{ .lg .middle } __Título__
+## REQ-05
 
-    ---
+!!! requirement "Conforto de Operação - Aceleração"
+    !!! description "Descrição"
+        A operação do sistema não deve ultrapassar a [aceleração máxima](specifications.md#spec-01).
+    !!! links "Artefatos Relacionados"
+        - Derivado de :octicons-arrow-right-24: [REQ-01 Conforto de Operação](#req-01)
+        - Especificado por :octicons-arrow-right-24: [SPEC-01 Aceleração Máxima](specifications.md#spec-01)
+        - Testado por :octicons-arrow-right-24: [Conforto de Operação - Aceleração](testcase.md#tcase-01)
 
-    Restrição de Velocidade em Operação Segundo <u>__ABNT__</u>
+## REQ-06
 
-</div>
+!!! requirement "Conforto de Operação - Jitter"
+    !!! description "Descrição"
+        A operação do sistema não deve ultrapassar o [jitter máximo](specifications.md#spec-02).
+    !!! links "Artefatos Relacionados"
+        - Derivado de :octicons-arrow-right-24: [REQ-01 Conforto de Operação](#req-01)
+        - Especificado por :octicons-arrow-right-24: [SPEC-02 Jitter Máximo](specifications.md#spec-02)
+        - Testado por :octicons-arrow-right-24: [Conforto de Operação - Jitter](testcase.md#tcase-02)
 
-<!-- Descrição -->
-<div class="grid cards" markdown>
+## REQ-07
 
--   :material-text-short:{ .lg .middle } __Descrição__
+!!! requirement "Alerta Sonoro da Cabine"
+    !!! description "Descrição"
+        O sistema de cabine deve atuar um sinal sonoro ao ultrapassar o 
+        [tempo limite de retenção da cabine](specifications.md#spec-03).
+    !!! links "Artefatos Relacionados"
+        - Derivador de :octicons-arrow-right-24: [REQ-02 Inibição de Travamento por Usuário](#req-02)
+        - Especificado por :octicons-arrow-right-24: [SPEC-03 Tempo Limite de Retenção da Cabine](specifications.md#spec-03)
 
-    ---
+## REQ-08
 
-    5.9.2.4 A velocidade do carro, com metade da carga
-    nominal, em subida ou descida, no meio do percurso,
-    excluindo os períodos de aceleração e retardamento, não
-    pode exceder à velocidade nominal em mais de 5%, com
-    a frequência da rede no valor nominal e a tensão do motor
-    igual ao valor nominal do equipamento.
+!!! requirement "Exatidão de Posicionamento - Parada"
+    !!! description "Descrição"
+        Ao parar a cabine, o sistema atingir a parada dentro do [limite de exatidão de parada](specifications.md#spec-04).
+    !!! links "Artefatos Relacionados"
+        - Derivado de :octicons-arrow-right-24: [REQ-03 Exatidão de Posicionamento](#req-03)
+        - Especificado por :octicons-arrow-right-24:  [SPEC-04 Limite de Exatidão de Parada](specifications.md#spec-04)
+        - Testado por :octicons-arrow-right-24: [Exatidão de Posicionamento - Parada](testcase.md#tcase-04)
 
-        a) impedir o elevador de atender chamadas de pavimento e comandos remotos;
-        b) desativar a operação das portas automáticas;
-        c) permitir chamada, pelo menos para os pavimentos
-            extremos, para manutenção.
+## REQ-09
 
-</div>
-
-<!-- Links -->
-<div class="grid cards" markdown>
-
--   :material-relation-one-to-one:{ .lg .middle } __Artefatos Relacionados__
-
-    ---
-
-    [:octicons-arrow-right-24: Nenhum até o momento](#req-04)
-
-</div>
+!!! requirement "Exatidão de Posicionamento - Carga/Descarga"
+    !!! description "Descrição"
+        Com a cabine parada, durante uma caraga e descarga, o sistema
+        deve reposicionar a para dentro do
+        [limite de exatidaão de parada](specifications.md#spec-04) caso
+        este exceda o [limite de exatidão de nivelamento](specifications.md#spec-05).
+    !!! links "Artefatos Relacionados"
+        - Derivado de :octicons-arrow-right-24: [REQ-03 Exatidão de Posicionamento](#req-03)
+        - Especificado por :octicons-arrow-right-24:  [SPEC-04 Limite de Exatidão de Parada](specifications.md#spec-04)
+        - Especificado por :octicons-arrow-right-24:  [SPEC-05 Limite de Exatidão de Nivelamento](specifications.md#spec-05)
+        - Testado por :octicons-arrow-right-24: [Exatidão de Posicionamento - Carga/Descarga](testcase.md#tcase-05)
