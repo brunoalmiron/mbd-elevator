@@ -144,5 +144,5 @@ nav:
     - Procedimentos de Teste: artifacts/testprocedure.md
   - Notas:
     - Notas da Versão: notes/release.md
-    - Notas Compiladas: notes/compiled.md
-    - Resumos Compilados: notes/summary.md
+    - Notas Compiladas: notes/releases.md
+    - Resumos Compilados: notes/releases_resume.md
