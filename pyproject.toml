@@ -11,7 +11,12 @@ mkdocs = "^1.5.3"
 mkdocs-material = "^9.5.18"
 mike = "^2.0.0"
 mkdocs-minify-plugin = "^0.8.0"
+matplotlib = "^3.9.1"
+numpy = "^2.0.0"
 
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
 
 [build-system]
 requires = ["poetry-core"]
