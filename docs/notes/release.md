@@ -1,3 +1,52 @@
+## Planejamento da Iteração
+
+Dado à experiência dos desenvolvida no último ciclo verifica-se a necessidade
+de:
+
+- Implementar um algoritmo de controle para o acionamento das chaves do
+    inversor.
+- Desenvolver os modelos de sistema de potência, motor e carga para
+    verificação da função sob cargas simplificadas.
+
+Para tal objetivo o ciclo deve elicitar:
+
+- Requisitos para o controlador
+- Especificações a serem investigadas
+- Casos de teste que possam ser facilmente aferidos
+
+Para a eficiência desse ciclo, desenvolvimento de procedimentos de teste
+devem ser postergado e reavaliados para o próximo ciclo.
+
+Como objetivo geral do ciclo requisitos funcionais para a operação do
+do controlador sob o motor foram definidos em [REQ-100](../artifacts/requirements.md#req-100), [REQ-110](../artifacts/requirements.md#req-110) e [REQ-120](../artifacts/requirements.md#req-120).
+
+## Desenvolvimento dos Casos de Teste
+
+Cada novo requisito teve uma cobertura estabelecida, porém é conveniente
+mais testes sejam inclusos de forma a observar condições adicionais de
+falha para o requisito.
+
+Essa ampliação de testes será postergada dado que deseja-se verificar um
+sistema que implemente funções que de fato requeiram testes.
+
+## Especificação do Sistema
+
+Deseja-se apresentar um sistema que opere o motor em condições de carga
+evitando operações inadequadas do sistema de chaveamento. Para isso o
+ciclo deve testar diferentes opções de malha de controle, em especial o
+controle de campo orientado (em inglês, FOC).
+
+## Modelagem
+
+
+
+## Desenvolvimentos dos Procedimentos de Teste
+
+## Execução dos Testes
+
+## Revisão dos Resultados
+
+<!---
 ## Objetivos da iteração
 
 Conforme estabelecido no ciclo 0, onde foram arranjados os recursos mínimos para o início de um ciclo de desenvolvimento, foram determinados os seguintes tópicos a serem atendidos:
@@ -43,3 +92,4 @@ Para o próximo ciclo sugere-se:
 
 - Desenvolver a malha de controle do Controlador de forma à obter uma sequência de chaveamento consistente.
 - Implementar sensores nos modelos para o monitoramento de variáveis de interesse que possam subsequentemente ser implementados em testes.
+ ---->
