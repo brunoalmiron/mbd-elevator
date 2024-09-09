@@ -25,6 +25,8 @@ helpsearch*/
 slprj/
 sccprj/
 codegen/
+build_codegen/
+build_sim/
 
 # Cache files
 *.slxc
@@ -34,3 +36,6 @@ codegen/
 
 # Site folder
 site/
+
+# IDE Configuration
+.vscode/*
