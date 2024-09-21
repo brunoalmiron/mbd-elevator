@@ -30,6 +30,8 @@ build_sim/
 
 # Cache files
 *.slxc
+*.original
+matlab/derived/*
 
 # Cloud based storage dotfile
 .MATLABDriveTag
