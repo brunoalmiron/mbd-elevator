@@ -1,49 +1,39 @@
 ## Planejamento da Iteração
 
-Dado à experiência dos desenvolvida no último ciclo verifica-se a necessidade
-de:
+Para o ciclo de desenvolvimento corrente deseja-se que
+um algoritmo de controle de corrente seja implementada,
+adequadamente apresentada no conjunto de artefatos e
+verificada por testes em simulação e em tempo real.
 
-- Implementar um algoritmo de controle para o acionamento das chaves do
-    inversor.
-- Desenvolver os modelos de sistema de potência, motor e carga para
-    verificação da função sob cargas simplificadas.
-
-Para tal objetivo o ciclo deve elicitar:
-
-- Requisitos para o controlador
-- Especificações a serem investigadas
-- Casos de teste que possam ser facilmente aferidos
-
-Para a eficiência desse ciclo, desenvolvimento de procedimentos de teste
-devem ser postergado e reavaliados para o próximo ciclo.
-
-Como objetivo geral do ciclo requisitos funcionais para a operação do
-do controlador sob o motor foram definidos em [REQ-100](../artifacts/requirements.md#req-100), [REQ-110](../artifacts/requirements.md#req-110) e [REQ-120](../artifacts/requirements.md#req-120).
+De forma alternativa, atividades de modelagem serão
+priorizadas e outros componentes do ciclo serão
+atendidos paralelamente ao desenvolvimento dos
+modelos e algoritmos.
 
 ## Desenvolvimento dos Casos de Teste
 
-Cada novo requisito teve uma cobertura estabelecida, porém é conveniente
+<!-- Cada novo requisito teve uma cobertura estabelecida, porém é conveniente
 mais testes sejam inclusos de forma a observar condições adicionais de
 falha para o requisito.
 
 Essa ampliação de testes será postergada dado que deseja-se verificar um
-sistema que implemente funções que de fato requeiram testes.
+sistema que implemente funções que de fato requeiram testes. -->
 
 ## Especificação do Sistema
 
-Deseja-se apresentar um sistema que opere o motor em condições de carga
+<!-- Deseja-se apresentar um sistema que opere o motor em condições de carga
 evitando operações inadequadas do sistema de chaveamento. Para isso o
 ciclo deve testar diferentes opções de malha de controle, em especial o
-controle de campo orientado (em inglês, FOC).
+controle de campo orientado (em inglês, FOC). -->
 
 ## Modelagem
 
-O ciclo se concentrou em duas atividades principais: refatorar o modelo
-do controlador e refatorar o modelo de simulação.
+<!-- O ciclo se concentrou em duas atividades principais: refatorar o modelo
+do controlador e refatorar o modelo de simulação. -->
 
 ## Refatoração do modelo do Controlador
 
-A refatoração do modelo necessitou o mapeamento das portas GPIO do
+<!-- A refatoração do modelo necessitou o mapeamento das portas GPIO do
 controlador do motor do elevador com as portas de aquisição do sistema
 Speedgoat.
 
@@ -90,7 +80,7 @@ ADC requerem:
 
 ## Refatoração do modelo de simulação
 
-A refatoração do modelo teve por objetivo sanar problemas de execução apresentados até o estado inicial do ciclo. Havia por hipótese que as
+<!-- A refatoração do modelo teve por objetivo sanar problemas de execução apresentados até o estado inicial do ciclo. Havia por hipótese que as
 falhas estavam restritas a falhas na integração dos modelos, parâmetros
 não contidos no modelo atual e configurações ainda não explorada. A
 atividade apresentou duas fontes críticas para a falha não previamente
@@ -98,7 +88,7 @@ prevista ou explorada na ferramenta.
 
 ## Defeito nas dependências de compilação para Realtime no Matlab/Simulink 2024a
 
-Após diversos testes serem conduzidos sob o sistema, desde exclusão
+<!-- Após diversos testes serem conduzidos sob o sistema, desde exclusão
 gradual de elementos do modelo, criação de modelos simplificados com
 os elemento em análise, verificação de logs de *crash* e ainda relatórios
 de compilação verificou-se que novas versões do Matlab e do arquivo de
@@ -115,7 +105,7 @@ dos modelos no projeto.
 
 ## Defeito no Multibody Toolbox para modelos de frequência múltipla
 
-Ao realizar testes individuais em cada modelo, determinou-se que a
+<!-- Ao realizar testes individuais em cada modelo, determinou-se que a
 integração deveria ser apoiada por testes de performance para cada
 modelo. Dessa forma verificou-se tempos de execução para cada
 submodelo e frequência desejada de avaliação de cada um para obtenção
@@ -140,20 +130,20 @@ de taxas distintas para o modelo mecânico e o elétrio. Enfim, optou-se
 pelo uso de uma taxa única de 500 Hz que viabilizaria tanto o modelo
 mecânico de ser executado dentro do tempo de um único passo, quanto
 para o elétrico de gerar simulações consistentes às primeiras simulações
-em 1000 Hz. 
+em 1000 Hz.  -->
 
 ## Considerações adicionais
 
-Dado às mudanças na estrutura do modelo, decidiu-se que o modelo
+<!-- Dado às mudanças na estrutura do modelo, decidiu-se que o modelo
 do inversor por chaves deveria ser substituído por um modelo com
 base no Duty Cycle mensurado, o que tranferiria o custo computacional
 do processamento em CPU da aquisição das amostras para a FPGA
 assim como seria mais adequado a taxa de amostagem limitada a 500 Hz
-para a execução do modelo.
+para a execução do modelo. -->
 
 ## Desenvolvimentos dos Procedimentos de Teste
 
-Para apoiar o desenvolvimento de modelos e verificar a manutenção da
+<!-- Para apoiar o desenvolvimento de modelos e verificar a manutenção da
 funcionalidade dos modelos desenvolvidos, foram implementados que
 verificam unitariamente e integrados sete testes, do quais seis deles
 se mantiveram ativos para garantir a sanidade destes para execução
@@ -161,16 +151,16 @@ do teste em tempo real. Os testes desenvolvidos além de intrinsecamente
 verificar que modelos passam pela etapa de compilação também aferem
 se modelos são executados abaixo da margem máxima de tempo de execução
 para qualquer momento durante a simulação assim como não apresentam
-"overload" (execução além do tempo do passo da simulação).
+"overload" (execução além do tempo do passo da simulação). -->
 
 ## Execução dos Testes
 
-Os testes apresentam tempos de execução adequados para frequências
-de avaliação de 500 Hz ou 0.002 ms. 
+<!-- Os testes apresentam tempos de execução adequados para frequências
+de avaliação de 500 Hz ou 0.002 ms.  -->
 
 ## Revisão dos Resultados
 
-O ciclo atual não permitiu que os objetivos estabelecidos
+<!-- O ciclo atual não permitiu que os objetivos estabelecidos
 inicialmente pudessem ser estabelecidos em função de das
 limitações técnicas verificadas no decorrer do ciclo.
 Dessa forma o ciclo foi capaz de estabelecer novos artefatos
@@ -186,11 +176,11 @@ de regressão dos modelos durante futuras alterações nos modelos.
 
 Uma relação dos artefatos do projeto é dada pelo gráfico que segue:
 
-![Artefatos por iteração](../assets/plots/artifact_seriesv0.3.0.svg)
+![Artefatos por iteração](../assets/plots/artifact_seriesv0.3.0.svg) -->
 
 ## Considerações para ciclos subsequentes
 
-Modularização das funções do software e estabelecimento de método
+<!-- Modularização das funções do software e estabelecimento de método
 de modos de execução que permitam que testes em modo desenvolvimento
 possam verificar progressivamente funções ou encadeamento de funções
 (integralção de funções) de maneira a garantir que o software é
@@ -202,4 +192,4 @@ proposto de maneira a reduzir o impacto sobre a produtividade a
 cada troca nos tópicos do desenvolvimento. A especialização não
 deve impedir que outras etapas sejam atendas, mas que sim que estas
 devem ser dadas como opcionais ou secundárias frente à atividade
-em foco. 
+em foco.  -->
