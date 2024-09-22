@@ -1,3 +1,5 @@
+# Notas Resumidas
+
 ## 0.3
 
 - Criação de novos artefatos para mapeamento do projeto.
