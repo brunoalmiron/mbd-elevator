@@ -31,7 +31,6 @@ build_sim/
 # Cache files
 *.slxc
 *.original
-matlab/derived/*
 
 # Cloud based storage dotfile
 .MATLABDriveTag
@@ -42,5 +41,6 @@ site/
 # IDE Configuration
 .vscode/*
 
-# Mathworks resources
+# Mathworks resources (custom exclusion)
 resources/
+derived/
