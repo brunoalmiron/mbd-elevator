@@ -41,3 +41,6 @@ site/
 
 # IDE Configuration
 .vscode/*
+
+# Mathworks resources
+resources/
