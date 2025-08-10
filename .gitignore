@@ -43,5 +43,4 @@ site/
 .vscode/*
 
 # Mathworks resources (custom exclusion)
-resources/
 derived/
